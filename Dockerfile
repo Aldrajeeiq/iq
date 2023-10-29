@@ -1,4 +1,4 @@
-FROM python:latest
+FROM python:3.11
 RUN mkdir /pdf && chmod 777 /pdf
 
 WORKDIR /ILovePDF
@@ -18,4 +18,4 @@ COPY /ILovePDF .
 RUN apt-get install -y tree
 RUN tree
 
-CMD python3 __main__.py
+CMD python3 main.py
